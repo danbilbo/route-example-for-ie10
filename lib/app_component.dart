@@ -8,14 +8,8 @@ import 'package:angular2/router.dart';
 @Component(
     selector: 'my-app',
     templateUrl: 'app_component.html',
-    providers: const [
-      ROUTER_PROVIDERS,
-      const Provider(APP_BASE_HREF, useValue: '/'),
-      const Provider(LocationStrategy, useClass: HashLocationStrategy),
-    ],
     directives: const [
       ROUTER_DIRECTIVES]
-
 )
 @RouteConfig(const [
   const Route(path: '/a',
