@@ -8,6 +8,8 @@ import 'package:angular2/router.dart';
 import 'package:router_ie_10/app_component.dart';
 
 main() {
+  enableProdMode();
+
   bootstrap(AppComponent, const [
     ROUTER_PROVIDERS,
     const Provider(APP_BASE_HREF, useValue: '/'),
